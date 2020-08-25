@@ -36,8 +36,12 @@ void draw()
     if(nextBall[p].show)
       {
        nextBall[p].draw();
+      
       }
-     
+     if(keyPressed)
+     {
+       nextBall[p].show=true;
+     }
    } 
 }
 void mousePressed()
